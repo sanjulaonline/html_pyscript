@@ -28,10 +28,12 @@
 ## 🎬 Preview
 
 <div align="center">
-  <video width="600" controls>
-    <source src="sample.mp4" type="video/mp4">
+  <video width="600" height="400" controls autoplay muted loop>
+    <source src="./sample.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
+  <br>
+  <small>Click to play the demo video</small>
 </div>
 
 ## 🧩 Project Structure
