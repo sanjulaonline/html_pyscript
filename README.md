@@ -28,12 +28,9 @@
 ## 🎬 Preview
 
 <div align="center">
-  <video width="600" height="400" controls autoplay muted loop>
-    <source src="./sample.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <img src="sample.gif" alt="AWS Particle Animation Demo" width="600" style="border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   <br>
-  <small>Click to play the demo video</small>
+  <small>Interactive particle animation with AWS logo</small>
 </div>
 
 ## 🧩 Project Structure
