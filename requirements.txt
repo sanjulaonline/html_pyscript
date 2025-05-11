@@ -1,0 +1,3 @@
+pyodide==0.21.0
+pyscript==2024.1.1 
+js==1.0

@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <script type="module">
+        import pypi from 'https://cdn.jsdelivr.net/npm/pypi@0.1.2/+esm'
+        </script>
+    <style>
+        #loading { outline: none; border: none; background: transparent }
+        body { margin: 0; overflow: hidden; background: black; }
+        .overlay-text { 
+            position: absolute; 
+            bottom: 100px; 
+            width: 100%; 
+            text-align: center; 
+            color: white; 
+            z-index: 10;
+        }
+        
+        .overlay-text p {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            max-width: 500px;
+            margin: 0 auto;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .overlay-text p:hover {
+            background: rgba(0, 0, 0, 0.8);
+            transform: translateY(-5px);
+        }
+        
+        .overlay-text a { 
+            color: #888; 
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            display: inline-block;
+        }
+        
+        .overlay-text a:hover { 
+            color: #0ff;
+            transform: translateY(-2px);
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+        }
+        
+        .contact-title {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: 600;
+            display: block;
+        }
+        
+        .social-links {
+            margin: 15px 0;
+        }
+        
+        .fork-link {
+            font-size: 0.9em;
+            opacity: 0.8;
+            margin-top: 15px;
+            display: inline-block;
+        }
+        
+        canvas { 
+            touch-action: none; 
+        }
+        
+        @media (max-width: 600px) {
+            .overlay-text p {
+                max-width: 90%;
+                padding: 15px;
+            }
+            .social-links {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+            .social-links a {
+                margin: 5px 0;
+            }
+        }
+        canvas { touch-action: none; }
+    </style>
+    <script type="module">
+        const loading = document.getElementById('loading');
+        addEventListener('py:ready', () => loading.close());
+        loading.showModal();
+    </script>
+
+    <title>AWS Particle Animation</title>
+</head>
+<body>
+    <dialog id="loading">
+        <h1 style="color: antiquewhite;">Loading...</h1>
+    </dialog>
+    
+    <canvas id="mainCanvas"></canvas>
+    <div class="overlay-text" role="contentinfo" aria-label="Contact Information">
+        <p>
+            <span class="contact-title">Connect With Me</span>
+            <div class="social-links">
+                <a href="https://t.me/SiXtySL" target="_blank" rel="noopener noreferrer" aria-label="Telegram Profile">Telegram</a>
+                <a href="https://www.linkedin.com/in/sanjulaherath" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">LinkedIn</a>
+                <a href="https://github.com/sanjulaonline" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">GitHub</a>
+            </div>
+            <a href="https://github.com/sanjulaonline/html_pyscript" target="_blank" rel="noopener noreferrer" class="fork-link" aria-label="Fork this project on GitHub">Fork this project</a>
+        </p>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/pyodide/v0.21.0/full/pyodide.js"></script>
+    <script type="py" src="./main.py"></script>
+</body>
+</html>
