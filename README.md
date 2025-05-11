@@ -11,7 +11,7 @@
 <div align="center">
   <p>A beautiful interactive particle animation that creates a dynamic AWS logo effect using PyScript and HTML Canvas.</p>
   
-  <a href="sample.mp4">
+  <a href="sample.gif">
     <img src="https://img.shields.io/badge/View_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="View Demo" />
   </a>
 </div>
