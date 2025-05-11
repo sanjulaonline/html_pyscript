@@ -11,8 +11,8 @@
 <div align="center">
   <p>A beautiful interactive particle animation that creates a dynamic AWS logo effect using PyScript and HTML Canvas.</p>
   
-  <a href="sample.gif">
-    <img src="https://img.shields.io/badge/View_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="View Demo" />
+  <a href="https://htmlpyscript.netlify.app/">
+    <img src="https://img.shields.io/badge/View_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="View Live Demo" />
   </a>
 </div>
 
@@ -41,23 +41,22 @@
 ├── main.py             # Python code for particle animation
 ├── requirements.txt    # Python package dependencies
 ├── vercel.json         # Vercel deployment configuration
-└── netlify.toml        # Netlify deployment 
+└── netlify.toml        # Netlify deployment configuration
 ```
 
 ## 🔧 Dependencies
 
 - Python 3.x
 - Required Python packages:
-  - pyodide==0.21.0
-  - pyscript==2024.1.1
   - js==1.0
+- Pyodide (loaded via CDN in the browser)
 
 ## 🚀 Installation
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/sanjulaonline/aws-particle-animation.git
-   cd aws-particle-animation
+   git clone https://github.com/sanjulaonline/html_pyscript.git
+   cd html_pyscript
    ```
 
 2. Install the required dependencies:
